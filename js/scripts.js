@@ -1,13 +1,13 @@
 document.addEventListener("scroll", () => {
-    const header = document.getElementById("header");
-  
-    // Comprueba si el usuario se ha desplazado más de 50px
-    if (window.scrollY > 50) {
-      header.classList.add("scrolled");
-    } else {
-      header.classList.remove("scrolled");
-    }
-  });
+  const header = document.getElementById("header");
+
+  // Comprueba si el usuario se ha desplazado más de 50px
+  if (window.scrollY > 50) {
+    header.classList.add("scrolled");
+  } else {
+    header.classList.remove("scrolled");
+  }
+});
 
 
   //-----------------SLIDES-------------------------
@@ -20,3 +20,12 @@ $(function () {
   });
 });
 
+//--------------MENU-----------------
+$("#icon-menu").click(function () {
+  $("#ul-menu").toggleClass("abrir_menu");
+});
+
+//--------------CLOSE-MENU-----------------
+$(".close-a").click(function () {
+  $("#ul-menu").toggleClass("abrir_menu");
+});

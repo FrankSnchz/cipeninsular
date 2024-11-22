@@ -1,0 +1,17 @@
+@media screen and (max-width: 768px) {
+    .logo-tipografia {
+        display: none;
+    }
+    #header {
+        #ul-menu
+        {
+            display: flex;
+            gap: 5px;
+            .menu-item{
+                a {
+                    font-size: .8rem;
+                }
+            }
+        }
+    }
+}
