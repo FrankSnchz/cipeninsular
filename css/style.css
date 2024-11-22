@@ -17,23 +17,83 @@
     /* COLORES AMARILLOS */
     --yellow-primary: #FFD450;
     --yellow-secondary: #F6C336;
-    --yellow-aditional: #E2AA21;
+    --yellow-aditional: rgba(218, 165, 32, 0.9);
+}
+
+.rslides {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;    
+    padding: 0;
+    margin: auto;
+    height: 650px;
+}
+  
+.rslides li {
+    backface-visibility: hidden;
+    position: absolute;
+    display: none;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.rslides li:first-child {
+    position: relative;
+    display: block;
+    float: left;
+}
+
+.rslides img {
+    display: block;
+    height: 100%;
+    float: left;
+    width: 100%;
+    border: 0;
+    object-fit: cover;
+    position: relative;
+
+}
+
+.slide-fotos{
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+
+
+.rslides_nav.prev, .rslides_nav.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(100, 100, 100);
+    padding: 10px;
+    font-size: 3rem;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+    text-decoration: none;
+}
+
+.rslides_nav.prev:hover, .rslides_nav.next:hover {
+    font-size: 3.2rem;
+}
+
+
+
+.rslides_nav.prev {
+    left: 3%;
+}
+
+.rslides_nav.next {
+    right: 3%;
 }
 
 .header-hero {
-    background-image: url('../resources/planos-hero.png');
-    /* Imagen común */
-    background-size: cover;
-    /* Asegura que la imagen ocupe todo el espacio */
-    background-position: center;
-    /* Centra la imagen */
-    background-repeat: no-repeat;
-    /* Evita que la imagen se repita */
-    height: 700px;
     position: relative;
-
     display: flex;
-    flex-direction: column;
 }
 
 .texture-overlay {
@@ -42,29 +102,25 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../resources/pattern-white.png');
-    /* Ruta de la textura */
+    background-image: url('../resources/pattern-points.jpg');
     background-size: cover;
-    /* Asegura que la textura cubra todo el área */
     background-position: center;
-    /* Centra la textura */
-    opacity: 0.60;
-    /* Ajusta la opacidad de la textura */
+    opacity: .01;
     pointer-events: none;
-    /* Para que no interfiera con los clics en otros elementos */
-    z-index: 1;
-    /* Asegura que la textura esté detrás de otros elementos */
+    z-index: 2;
 }
 
-
-header {
-    position: relative;
+#header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: transparent; /* Color inicial */
+    transition: background-color 0.3s ease; /* Transición suave */
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 35px;
-    /* background-color: var(--yellow-aditional); /* Gris oscuro */
-    z-index: 2;
+    z-index: 20;
 
     .logos {
         display: flex;
@@ -163,15 +219,25 @@ header {
 
 }
 
+#header.scrolled {
+    background-color: var(--yellow-aditional); /* Gris oscuro */
+    color: white; /* Cambia el color del texto si es necesario */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Agrega una sombra */
+    height: 70px;
+}
+
 /* Estilos para la sección hero */
 .hero {
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Asegura que ocupe toda la altura del slide */
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 5; /* Asegura que esté sobre los slides pero debajo del header */
     color: white;
-    flex-grow: 1;
-    /* Hace que .hero ocupe el espacio restante */
 
 
     h1 {
