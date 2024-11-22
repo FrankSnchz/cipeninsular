@@ -14,8 +14,8 @@ document.addEventListener("scroll", () => {
 $(function () {
   $(".rslides").responsiveSlides({
     nav: true, // Activar los botones de navegación
-    prevText: "❮", // Texto para el botón "anterior"
-    nextText: "❯", // Texto para el botón "siguiente"
+    /* prevText: "❮", */ // Texto para el botón "anterior"
+    /* nextText: "❯", */ // Texto para el botón "siguiente"
     pauseControls: false, // No pausar al hacer hover en controles
   });
 });
