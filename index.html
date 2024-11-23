@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/movil.css" />
     <link rel="stylesheet" href="css/tablet.css" />
+    <link rel="stylesheet" href="css/animate.css" />
     <script
       src="https://kit.fontawesome.com/138f20aa8b.js"
       crossorigin="anonymous"
@@ -16,18 +17,15 @@
   </head>
   <body>
     <!-- slide fotos con responsiveslides -->
-
     <div class="header-hero slide-fotos">
       <ul class="rslides">
-        <li><img src="resources/casa-hero.png" alt="" /></li>
-        <li><img src="resources/casa2-hero.png" alt="" /></li>
         <li><img src="resources/exterior-hero.png" alt="" /></li>
+        <li><img src="resources/casa-hero.png" alt="" /></li>
         <li><img src="resources/planos-hero.png" alt="" /></li>
         <li><img src="resources/cuarto-hero.png" alt="" /></li>
       </ul>
 
       <!-- logos navbar -->
-
       <div class="texture-overlay"></div>
       <header id="header">
         <div class="nav-movil">
@@ -135,84 +133,59 @@
       </header>
 
       <!-- hero -->
-
       <section class="hero">
         <h1></h1>
       </section>
     </div>
 
-    <section class="">
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum voluptatem
-      dolor doloremque distinctio facilis voluptate ipsum autem quo, officia
-      soluta praesentium porro veritatis deleniti eaque quis delectus iure
-      pariatur aperiam minus repellendus ea enim sunt? Alias inventore ab
-      officia odit obcaecati saepe deserunt doloremque vitae? Dicta suscipit
-      nostrum cupiditate eos laborum quas delectus vel repellat explicabo sequi
-      sed aliquam blanditiis ex officia, architecto quis ratione. Illo
-      consequuntur illum doloremque ab quod recusandae doloribus reprehenderit
-      sit, nemo quisquam deleniti consectetur est animi? Beatae, totam nostrum.
-      Sunt autem at harum ratione pariatur modi eius, explicabo dignissimos,
-      labore atque repellat accusamus, eaque dicta optio repudiandae voluptas
-      nihil doloremque cum aut. Minus perferendis consequatur, nihil vitae
-      tempora dolores fuga ab libero nam quis ipsam natus numquam animi suscipit
-      distinctio molestiae dicta quo soluta vero veniam eaque nulla fugiat.
-      Corporis nesciunt illum exercitationem optio ipsum vitae et dolor
-      veritatis, deleniti alias labore maxime fuga sequi voluptates iusto
-      tempore reiciendis eum culpa earum ex voluptatum quidem nihil? Hic ipsam
-      mollitia ad amet, quia et odit exercitationem quibusdam odio. Magni
-      voluptate ad commodi blanditiis eaque neque eveniet nihil voluptas.
-      Dolore, inventore id asperiores ratione cupiditate aliquam laudantium
-      nihil ducimus, dignissimos ullam voluptatem eligendi rem consequatur
-      reiciendis. Minus.
-    </section>
-
-    <!-- footer -->
     <!-- servicios -->
-
-    <section id="services" class="services">
+    <section id="services">
       <h3>[ NUESTROS SERVICIOS ]</h3>
       <h2>¿Qué podemos ofrecer?</h2>
       <div class="service-items">
         <article class="wow animate__animated animate__fadeInDown service-item">
-          <div class="icon-container">
+          <figure>
             <img src="resources/iconbox1.webp" alt="" />
-          </div>
-          <h3>Construcción en General</h3>
+          </figure>
+          <h3 class="title-service">Construcción en General</h3>
           <p>
             Desde edificaciones residenciales hasta comerciales e industriales
           </p>
-          <a href="" class="more">ver más</a>
+          <a href="" class="view-more">Ver proyectos</a>
         </article>
 
         <article class="wow animate__animated animate__fadeInUp service-item">
-          <div class="icon-container">
+          <figure>
             <img src="resources/iconbox2.webp" alt="" />
-          </div>
-          <h3>Planos Arquitectónicos</h3>
+          </figure>
+          <h3 class="title-service">Planos Arquitectónicos</h3>
           <p>
             Facilitan el desarrollo de la estructura y la distribución del
             espacio
           </p>
-          <a href="" class="more">ver más</a>
+          <a href="" class="view-more">Ver proyectos</a>
         </article>
 
         <article class="wow animate__animated animate__fadeInDown service-item">
-          <div class="icon-container">
+          <figure>
             <img src="resources/iconbox3.webp" alt="" />
-          </div>
-          <h3>Interiores de Chukum</h3>
+          </figure>
+          <h3 class="title-service">Interiores de Chukum</h3>
           <p>
             Acabados naturales en interiores, que dan un aspecto rústico y
             elegante
           </p>
-          <a href="" class="more">ver más</a>
+          <a href="" class="view-more">Ver proyectos</a>
         </article>
       </div>
-      <button class="service-more">ver todos</button>
+      <a
+        href=""
+        class="wow animate__animated animate__fadeIn animate__delay-1s view-all"
+        >Ver todos nuestros servicios</a
+      >
     </section>
 
     <!-- footer -->
-
     <footer>
       <div class="main-footer">
         <div class="info">
@@ -238,16 +211,26 @@
         </div>
 
         <div class="social-icons">
-          <a href="https://facebook.com" target="_blank" class="fb"
+          <a
+            href="https://www.facebook.com/profile.php?id=61568988712824"
+            target="_blank"
+            class="fb"
             ><i class="fa-brands fa-facebook"></i
           ></a>
-          <a href="https://x.com" target="_blank" class="tw"
+          <!--<a href="https://x.com" target="_blank" class="tw"
             ><i class="fa-brands fa-x-twitter"></i
-          ></a>
-          <a href="https://www.instagram.com" target="_blank" class="ig"
+          ></a>-->
+
+          <a
+            href="https://www.instagram.com/cipeninsular_mx/"
+            target="_blank"
+            class="ig"
             ><i class="fa-brands fa-instagram"></i
           ></a>
-          <a href="https://www.youtube.com" target="_blank" class="yt"
+          <a
+            href="https://www.youtube.com/@CIPENINSULAR_MX"
+            target="_blank"
+            class="yt"
             ><i class="fa-brands fa-youtube"></i
           ></a>
         </div>
@@ -276,15 +259,12 @@
       <div class="copy">
         <p>
           <span>Cipeninsular</span> &copy; 2024 . Todos los derechos reservados.
-          Diseñado y desarrollado por <span>Technni</span>.
+          Diseñado y desarrollado por <span>CIP</span>.
         </p>
       </div>
     </footer>
 
     <script src="js/scripts.js"></script>
-
-    <!-- script wow.js -->
-
     <script src="js/wow.min.js"></script>
     <script>
       new WOW().init();

@@ -64,7 +64,17 @@
     #ul-menu.abrir_menu {
         right: 0;    
     }
-
+    
+    #services {
+        .service-items {
+            .service-item {
+                width: 90%;
+            }
+        }
+    }
+    
+    
+    
     footer{
         padding: 10px;
         .main-footer {
