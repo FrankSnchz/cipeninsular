@@ -29,3 +29,43 @@ $("#icon-menu").click(function () {
 $(".close-a").click(function () {
   $("#ul-menu").toggleClass("abrir_menu");
 });
+
+
+//--------------------MENÚ BLOCK--------
+// Manejador para los clics en los enlaces del menú
+document.querySelectorAll('.menu-item > a').forEach(menuItem => {
+  menuItem.addEventListener('click', function(event) {
+      // Verificamos si el elemento tiene un atributo href
+      if (this.hasAttribute('href') && this.getAttribute('href').trim() !== '') {
+          return; // Si tiene href, salimos y permitimos el comportamiento predeterminado
+      }
+
+      event.preventDefault(); // Evitamos el comportamiento predeterminado del enlace
+      
+      const parent = this.parentElement; // Seleccionamos el elemento padre (menu-item)
+
+      // Cerramos todos los submenús abiertos que no sean el actual
+      document.querySelectorAll('.menu-item.active').forEach(activeItem => {
+          if (activeItem !== parent) {
+              activeItem.classList.remove('active');
+          }
+      });
+
+      // Alternamos la clase active en el elemento actual
+      parent.classList.toggle('active');
+  });
+});
+
+// Manejador para cerrar submenús al hacer clic fuera del menú
+document.addEventListener('click', function(event) {
+  // Verificamos si el clic ocurrió dentro de un elemento del menú
+  const clickedInsideMenu = event.target.closest('.menu-item');
+
+  if (!clickedInsideMenu) {
+      // Si el clic ocurrió fuera del menú, cerramos todos los submenús abiertos
+      document.querySelectorAll('.menu-item.active').forEach(activeItem => {
+          activeItem.classList.remove('active');
+      });
+  }
+});
+

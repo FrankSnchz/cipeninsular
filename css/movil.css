@@ -3,6 +3,8 @@
     #header {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
         
         .cart {
             display: none;
@@ -61,5 +63,40 @@
 
     #ul-menu.abrir_menu {
         right: 0;    
+    }
+
+    footer{
+        padding: 10px;
+        .main-footer {
+            flex-direction: column-reverse;
+            gap: 20px;
+
+            .info {
+                width: 100%;
+            }
+
+            .social-icons {
+                width: 100%;
+            }
+
+            .about {
+                width: 100%;
+
+                .logos-footer {
+                    justify-content: center;
+
+                    .logo-solo {
+                        width: 80px;
+                    }
+                }
+
+                .about-us {
+                    align-items: center;
+                    p {
+                        text-align: center;
+                    }
+                }
+            }
+        }
     }
 }
