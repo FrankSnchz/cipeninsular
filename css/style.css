@@ -253,19 +253,19 @@ html
 }
 
 /* services */
-
 #services {
-  border: 1px red solid;
   padding: 3rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 
   h2 {
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 2rem;
     color: #333;
+    text-align: center;
   }
   
   h3{
@@ -286,38 +286,43 @@ html
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      width: 400px;
-      height: 300px;
-      padding: 2rem;
+      width: 250px;
+      height: 250px;
+      padding: 1rem 1.5rem;
       text-align: center;
       background-color: #f9f9f9;
       border: 1px solid #ddd;
       transition: all 0.5s ease-in-out;
 
       figure {
-        width: 70px;
-        height: 70px;
+        width: 50px;
+        height: 50px;
         
         img {
           width: 100%;
+          height: 100%;
         }
       }
 
       .title-service {
-        font-size: 1.25rem;
+        font-size: 1.2rem;
         font-weight: 600;
         color: #333;
       }
 
+      p {
+        font-size: .9rem;
+      }
+
       .view-more {
         text-decoration: none;
+        font-size: .9rem;
         border: 1px rgb(102, 102, 102) solid;
-        padding: 5px 10px;
+        padding: 1px 7px;
         color: black;
       }
       .view-more:hover {
-        transform: scale(1.1);
-
+        transform: scale(1.01);
       }
     }
 
@@ -337,41 +342,112 @@ html
   .view-all {
     text-decoration: none;
     margin: 2rem 0 0 0;
-    padding: 10px 15px;
+    padding: 7px 12px;
     color: white;
     background-color: black;
   }
+
+  .view-all:hover {
+    color: black;
+    background-color: rgb(194, 194, 194);
+  }
 }
 
+/*parallax*/
 
-/* .service-item:nth-child(1) {
-  background-image: url('../resources/Planos-arquitectónicos.png');
+.parallax {
+  background-image: url('../resources/img-parallax.png');
+  background-size: cover; /* Ajusta la imagen para que cubra todo el contenedor */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-position: center; /* Centra la imagen en el contenedor */
+  width: 100%;
+  background-attachment: fixed ;
+  min-height: 250px;
+  position: relative;
+
+  .info-parallax {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    gap: 15px;
+
+    h1, p {
+      color: white;
+      text-align: left;
+    }
+
+    .view-more {
+      text-decoration: none;
+      color: white;
+      border: 1px rgb(255, 255, 255) solid;
+      padding: 10px 15px;
+    }
+
+    .view-more:hover {
+      background-color: black;
+    }
+  }
+  
+  .transparencia {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.6); /* Capa negra semitransparente */
+  }
 }
 
-.service-item:nth-child(2) {
-  background-image: url('../resources/Planos-arquitectónicos.png');
+/* Galeria */
+#gallery {
+  margin: auto;
+  border: 1px red solid;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+
+  .project-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    
+    figure {
+      width: 200px;
+      height: 200px;
+  
+      img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          display: block;
+      }
+    }
+  }
 }
-
-.service-item:nth-child(3) {
-  background-image: url('../resources/Planos-arquitectónicos.png');
-} */
-
-
-
 
 /* footer */
-
 footer {
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 10px;
   background-color: var(--yellow-aditional);
 
   .main-footer {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-bottom: 10px;
 
     .info {
       display: flex;
@@ -386,14 +462,18 @@ footer {
           display: flex;
           align-items: center;
           gap: 15px;
-  
+          
+          p {
+            font-size: 14px;
+          }
           a {
             color: black;
             text-decoration: none;
+            font-size: 14px;
           }
   
           .icon {
-            font-size: 1.5rem;
+            font-size: 15px;
           }
         }
       }
@@ -407,8 +487,8 @@ footer {
 
       a {
         display: flex;
-        width: 55px; 
-        height: 55px; 
+        width: 45px; 
+        height: 45px; 
         border-radius: 50%;
         text-decoration: none;
         background-color: gray;
@@ -447,14 +527,15 @@ footer {
       .logos-footer {
         display: flex;
         align-items: center;
-        gap: 20px;
         justify-content: end;
   
         .logo-solo {
-          width: 60px; 
+          width: 60px;
+          height: 50px; 
   
           img {
             width: 100%;
+            height: 100%;
           }
         }
         
@@ -473,6 +554,7 @@ footer {
         align-items: end;
         p{
           text-align: end;
+          font-size: .9rem;
         }
       }
     
@@ -480,6 +562,15 @@ footer {
     }
   }
 
+  .privacity {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    padding-bottom: 5px;
+  }
+  .privacity:hover {
+    color: white;
+  }
   .line {
     height: 1px;            /* Altura de la línea */
     background-color: #000000; /* Color de la línea */
@@ -492,7 +583,7 @@ footer {
     display: flex;
     text-align: center;
     justify-content: center;
-    padding-top: 20px;
+    padding-top: 10px;
     margin: auto;
 
     span {

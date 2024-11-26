@@ -64,25 +64,17 @@
     #ul-menu.abrir_menu {
         right: 0;    
     }
-    
-    #services {
-        .service-items {
-            .service-item {
-                width: 90%;
-            }
-        }
-    }
-    
-    
+
     
     footer{
         padding: 10px;
         .main-footer {
             flex-direction: column-reverse;
-            gap: 20px;
+            gap: 10px;
 
             .info {
                 width: 100%;
+                align-items: center;
             }
 
             .social-icons {

@@ -7,12 +7,15 @@
     <link rel="stylesheet" href="css/movil.css" />
     <link rel="stylesheet" href="css/tablet.css" />
     <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/fancybox.css" />
+
     <script
       src="https://kit.fontawesome.com/138f20aa8b.js"
       crossorigin="anonymous"
     ></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="js/responsiveslides.js"></script>
+    <script src="js/fancybox.js"></script>
     <title>Cipeninsular Design</title>
   </head>
   <body>
@@ -185,6 +188,124 @@
       >
     </section>
 
+    <!-- parallax -->
+    <section class="parallax">
+      <div class="info-parallax">
+        <h1>Creatividad e Innovación Peninsular</h1>
+        <p>
+          Somos una empresa del ramo de la Construcción y Arquitectura en
+          México, 100% Yucateca. <br />
+          Fundada en el año 2015 en la ciudad de Mérida, Yucatán.
+        </p>
+        <a class="view-more" href="">Contáctanos</a>
+      </div>
+      <div class="transparencia"></div>
+    </section>
+
+    <!--galeria-->
+    <section id="gallery">
+      <div>
+        <h1>Galería de proyectos</h1>
+      </div>
+      <div class="project-gallery">
+        <!---------------INICIO DEL PROYECTO 1----------->
+        <a
+          href="resources/gallery/TrenMayaTramo3/Tramo3_1.png"
+          data-fancybox="project-1"
+          data-caption="Imagen del Proyecto 1 - Foto 1"
+        >
+          <figure>
+            <img
+              src="resources/gallery/TrenMayaTramo3/Tramo3_1.png"
+              alt="Proyecto 1 - Foto 1"
+            />
+          </figure>
+        </a>
+        <!--Adicionales-->
+        <a
+          href="resources/gallery/TrenMayaTramo3/Tramo3_2.jpg"
+          data-fancybox="project-1"
+          data-caption="Imagen del Proyecto 1 - Foto 2"
+          style="display: none"
+        >
+          <img
+            src="resources/gallery/TrenMayaTramo3/Tramo3_2.jpg"
+            alt="Proyecto 1 - Foto 2"
+          />
+        </a>
+        <a
+          href="resources/gallery/TrenMayaTramo3/Tramo3_3.jpg"
+          data-fancybox="project-1"
+          data-caption="Imagen del Proyecto 1 - Foto 3"
+          style="display: none"
+        >
+          <img
+            src="resources/gallery/TrenMayaTramo3/Tramo3_3.jpg"
+            alt="Proyecto 1 - Foto 3"
+          />
+        </a>
+        <a
+          href="resources/gallery/TrenMayaTramo3/Tramo3_4.jpg"
+          data-fancybox="project-1"
+          data-caption="Imagen del Proyecto 1 - Foto 4"
+          style="display: none"
+        >
+          <img
+            src="resources/gallery/TrenMayaTramo3/Tramo3_4.jpg"
+            alt="Proyecto 1 - Foto 4"
+          />
+        </a>
+        <!----------------FIN DEL PROYECTO 1----------->
+        <!---------------INICIO DEL PROYECTO 2----------->
+        <a
+          href="resources/gallery/TrenMayaTramo3/Tramo3_1.png"
+          data-fancybox="project-2"
+          data-caption="Imagen del Proyecto 2 - Foto 1"
+        >
+          <figure>
+            <img
+              src="resources/gallery/TrenMayaTramo3/Tramo3_1.png"
+              alt="Proyecto 2 - Foto 1"
+            />
+          </figure>
+        </a>
+        <a
+          href="resources/gallery/TrenMayaTramo3/Tramo3_2.jpg"
+          data-fancybox="project-2"
+          data-caption="Imagen del Proyecto 2 - Foto 2"
+          style="display: none"
+        >
+          <img
+            src="resources/gallery/TrenMayaTramo3/Tramo3_2.jpg"
+            alt="Proyecto 2 - Foto 2"
+          />
+        </a>
+        <a
+          href="resources/gallery/TrenMayaTramo3/Tramo3_3.jpg"
+          data-fancybox="project-2"
+          data-caption="Imagen del Proyecto 2 - Foto 3"
+          style="display: none"
+        >
+          <img
+            src="resources/gallery/TrenMayaTramo3/Tramo3_3.jpg"
+            alt="Proyecto 2 - Foto 3"
+          />
+        </a>
+        <a
+          href="resources/gallery/TrenMayaTramo3/Tramo3_4.jpg"
+          data-fancybox="project-2"
+          data-caption="Imagen del Proyecto 2 - Foto 4"
+          style="display: none"
+        >
+          <img
+            src="resources/gallery/TrenMayaTramo3/Tramo3_4.jpg"
+            alt="Proyecto 2 - Foto 4"
+          />
+        </a>
+        <!----------------FIN DEL PROYECTO 1----------->
+      </div>
+    </section>
+
     <!-- footer -->
     <footer>
       <div class="main-footer">
@@ -193,15 +314,15 @@
             <h4>Información de contacto</h4>
             <div class="contact-item">
               <i class="icon fa-solid fa-location-dot"></i>
-              <span
-                >55 S/N entre 54 y 60 Hacienda Teya<br />Kanasin, CP. 97370,
-                Mérida Yucatán.</span
-              >
+              <p>
+                55 S/N entre 54 y 60 Hacienda Teya<br />Kanasin, CP. 97370,
+                Mérida Yucatán.
+              </p>
             </div>
 
             <div class="contact-item">
               <i class="icon fa-solid fa-phone-volume"></i>
-              <span>+52 9992 492402</span>
+              <p>+52 9992 492402</p>
             </div>
             <div class="contact-item">
               <i class="icon fa-solid fa-envelope"></i>
@@ -255,6 +376,7 @@
         </div>
       </div>
 
+      <a class="privacity" href="">Aviso de privacidad</a>
       <div class="line"></div>
       <div class="copy">
         <p>
@@ -268,6 +390,13 @@
     <script src="js/wow.min.js"></script>
     <script>
       new WOW().init();
+    </script>
+
+    <!--GALLERY-->
+    <script>
+      Fancybox.bind("[data-fancybox]", {
+        // Your custom options for a specific gallery
+      });
     </script>
   </body>
 </html>
