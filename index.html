@@ -9,10 +9,7 @@
     <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/fancybox.css" />
 
-    <script
-      src="https://kit.fontawesome.com/138f20aa8b.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/138f20aa8b.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="js/responsiveslides.js"></script>
     <script src="js/fancybox.js"></script>
@@ -452,6 +449,28 @@
         >Ver todos nuestros servicios</a
       >
     </section>
+
+<!-- formulario de contactos -->
+
+<button class="contact">
+  <i class="fa-solid fa-envelope"</i> <!-- Icono que aparecerá solo en pantallas pequeñas -->
+  <span class="contact-text">Contact Us</span> <!-- Texto que se ocultará en pantallas pequeñas -->
+</button>
+
+<!-- Modal -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close"><i class="fa-solid fa-xmark"></i></span>
+    <h2>Contact Us</h2>
+    <p>If you have any questions concerning our services, please fill out the contact form below.</p>
+    <form class="contact-form">
+      <input type="text" name="name" placeholder="Name *" required>
+      <input type="email" name="email" placeholder="E-mail *" required>
+      <textarea name="message" placeholder="Message *" required></textarea>
+      <button type="submit" class="submit-btn">SUBMIT</button>
+    </form>
+  </div>
+</div>
 
     <!-- footer -->
     <footer>

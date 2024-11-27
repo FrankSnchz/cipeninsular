@@ -69,3 +69,44 @@ document.addEventListener('click', function(event) {
   }
 });
 
+
+/* --------------modal  -----------------*/
+
+function toggleScroll(enable) {
+  if (enable) {
+    // Restaurar scroll
+    document.body.style.overflow = '';
+  } else {
+    // Desactivar scroll
+    document.body.style.overflow = 'hidden';
+  }
+}
+
+// Abrir el modal y desactivar el scroll cuando se presiona el botón con la clase 'contact'
+$(".contact").click(function () {
+  $("#modal").addClass("show");
+  toggleScroll(false); // Desactivar scroll
+});
+
+// Cerrar el modal y restaurar el scroll cuando se presiona el botón con la clase 'close'
+$(".close").click(function () {
+  $("#modal").removeClass("show");
+  toggleScroll(true); // Restaurar scroll
+});
+
+// Cerrar el modal al hacer clic fuera del diálogo
+window.onclick = function (event) {
+  if (event.target == document.getElementById("modal")) {
+    $("#modal").removeClass("show");
+    toggleScroll(true); // Restaurar scroll
+  }
+};
+
+// Cerrar el modal al presionar la tecla Esc
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape") {
+    $("#modal").removeClass("show");
+    toggleScroll(true); // Restaurar scroll
+  }
+});
+
