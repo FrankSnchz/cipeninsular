@@ -328,6 +328,7 @@ html
 
     .service-item:hover {
       background-color: rgb(29, 29, 29);
+      transition: background-color 0.3s ease, transform 0.1s ease;
 
       .title-service, p {
         color: whitesmoke;
@@ -352,6 +353,7 @@ html
 .view-all:hover {
   color: black;
   background-color: rgb(194, 194, 194);
+  transition: background-color 0.3s ease, transform 0.1s ease;
 }
 /*parallax*/
 #parallax {
@@ -390,6 +392,7 @@ html
 
     .view-more:hover {
       background-color: black;
+      transition: background-color 0.3s ease, transform 0.1s ease;
     }
   }
   
@@ -657,15 +660,19 @@ footer {
 
       .fb:hover {
         background-color: #4e9efc;
+        transition: background-color 0.3s ease, transform 0.1s ease;
       }
       .tw:hover {
         background-color: black;
+        transition: background-color 0.3s ease, transform 0.1s ease;
       }
       .ig:hover {
         background-color: #e1306c;
+        transition: background-color 0.3s ease, transform 0.1s ease;
       }
       .yt:hover {
         background-color: #ff0000;
+        transition: background-color 0.3s ease, transform 0.1s ease;
       }     
     }
 
