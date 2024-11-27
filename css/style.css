@@ -602,17 +602,17 @@ footer {
     .info {
       display: flex;
       flex-wrap: wrap; 
-  
+
       .contact-info {
         display: flex;
         flex-direction: column;
         gap: 8px;
-  
+
         .contact-item {
           display: flex;
           align-items: center;
           gap: 15px;
-          
+
           p {
             font-size: 14px;
           }
@@ -621,7 +621,7 @@ footer {
             text-decoration: none;
             font-size: 14px;
           }
-  
+
           .icon {
             font-size: 15px;
           }
@@ -673,31 +673,31 @@ footer {
       display: flex;
       flex-direction: column;
       width: 300px;
-  
+
       .logos-footer {
         display: flex;
         align-items: center;
         justify-content: end;
-  
+
         .logo-solo {
           width: 60px;
           height: 50px; 
-  
+
           img {
             width: 100%;
             height: 100%;
           }
         }
-        
+
         .logo-tipografia {
           width: 150px; 
-  
+
           img {
             width: 100%;
           }
         }
       }
-  
+
       .about-us {
         display: flex;
         flex-direction: column;
@@ -707,8 +707,8 @@ footer {
           font-size: .9rem;
         }
       }
-    
-      
+
+
     }
   }
 
@@ -741,7 +741,6 @@ footer {
     }
   }
 }
-
   
   
   
