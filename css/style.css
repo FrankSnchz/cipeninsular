@@ -437,6 +437,111 @@ html
   }
 }
 
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal.show {
+  display: block;
+}
+
+.modal-content {
+  background-color: white;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  text-align: left;
+  position: relative;
+}
+
+.modal-content h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.modal-content p {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  height: 80px;
+}
+
+.submit-btn {
+  background-color: #39B3DD;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 50px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.submit-btn:hover {
+  background-color: #F6C336;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #ff0800;
+}
+
+/* Estilos para el botón fijo de contacto */
+.contact {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #238EBF;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.contact:hover {
+  background-color: #FFD450;
+  transform: scale(1.05);
+}
+
 /* footer */
 footer {
   display: flex;

@@ -101,4 +101,11 @@
             }
         }
     }
+    .contact-text {
+        display: none; /* Oculta el texto */
+      }
+
+      .contact i {
+        display: inline-block; /* Muestra el icono */
+      }
 }
