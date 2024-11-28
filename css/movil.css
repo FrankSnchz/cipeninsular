@@ -104,7 +104,7 @@
         display: none; /* Oculta el texto */
       }
 
-      .contact i {
+    .contact i {
         display: inline-block; /* Muestra el icono */
-      }
+    }
 }

@@ -72,6 +72,12 @@ document.addEventListener('click', function(event) {
 
 /* --------------modal  -----------------*/
 
+// Abrir el modal y desactivar el scroll cuando se presiona el botón con la clase 'contact'
+$(".contact").click(function () {
+  $("#modal").addClass("show");
+  toggleScroll(false); // Desactivar scroll
+});
+
 function toggleScroll(enable) {
   if (enable) {
     // Restaurar scroll
@@ -81,12 +87,6 @@ function toggleScroll(enable) {
     document.body.style.overflow = 'hidden';
   }
 }
-
-// Abrir el modal y desactivar el scroll cuando se presiona el botón con la clase 'contact'
-$(".contact").click(function () {
-  $("#modal").addClass("show");
-  toggleScroll(false); // Desactivar scroll
-});
 
 // Cerrar el modal y restaurar el scroll cuando se presiona el botón con la clase 'close'
 $(".close").click(function () {

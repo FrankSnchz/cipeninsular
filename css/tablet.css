@@ -46,6 +46,11 @@
         }
     }
     
+    .overlay {
+        .dialog {
+            width: 90vw;
+        }
+    }
     footer{
         padding: 10px;
         .main-footer {
