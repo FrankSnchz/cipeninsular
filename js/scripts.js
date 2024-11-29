@@ -72,6 +72,12 @@ document.addEventListener('click', function(event) {
 
 /* --------------modal  -----------------*/
 
+// Abrir el modal y desactivar el scroll cuando se presiona el botón con la clase 'contact'
+$(".contact").click(function () {
+  $("#modal").addClass("show");
+  toggleScroll(false); // Desactivar scroll
+});
+
 function toggleScroll(enable) {
   if (enable) {
     // Restaurar scroll
@@ -81,12 +87,6 @@ function toggleScroll(enable) {
     document.body.style.overflow = 'hidden';
   }
 }
-
-// Abrir el modal y desactivar el scroll cuando se presiona el botón con la clase 'contact'
-$(".contact").click(function () {
-  $("#modal").addClass("show");
-  toggleScroll(false); // Desactivar scroll
-});
 
 // Cerrar el modal y restaurar el scroll cuando se presiona el botón con la clase 'close'
 $(".close").click(function () {
@@ -110,3 +110,38 @@ document.addEventListener("keydown", function (event) {
   }
 });
 
+
+// Incrementar el contador en la sección Experience
+document.addEventListener("DOMContentLoaded", function () {
+  const counters = document.querySelectorAll('.counter');
+
+  // Función para hacer el conteo progresivo
+  const updateCount = (counter) => {
+    const target = +counter.getAttribute('data-target');
+    const current = +counter.innerText.replace(/[^0-9]/g, '');
+    
+    if (current < target) {
+      counter.innerText = `[ ${Math.min(current + Math.ceil(target / 100), target)} ]`;
+      setTimeout(() => updateCount(counter), 10); // Ajusta la velocidad de incremento
+    } else {
+      counter.innerText = `[ ${target} ]`; // Asegura que el número llegue al valor final
+    }
+  };
+
+  // Configura el IntersectionObserver
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) { // Si el contador es visible
+        updateCount(entry.target); // Inicia el conteo
+        observer.unobserve(entry.target); // Deja de observar una vez que se haya iniciado el conteo
+      }
+    });
+  }, {
+    threshold: 0.5 // El 50% del elemento debe estar visible para comenzar el conteo
+  });
+
+  // Empieza a observar cada elemento con la clase .counter
+  counters.forEach(counter => {
+    observer.observe(counter);
+  });
+});
