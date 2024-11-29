@@ -503,7 +503,116 @@ html
   }
 }
 
-#partners {
+/* team */
+
+.contenedor-principal {
+  text-align: center;
+  padding: 2rem;
+  width: 100%;
+  border: #0056b3 1px solid;
+  margin: auto;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.underline {
+  width: 50px;
+  height: 4px;
+  background-color: #007bff;
+  margin: 0.5rem auto 2rem;
+  border: none;
+}
+
+.contenedor-secundario {
+  display: flex;
+  overflow: hidden;
+  border: #000000 1px solid;
+  width: 100%;
+}
+
+.slide {
+  text-align: center;
+  min-width: 33.33%;
+}
+
+.imgentest {
+  position: relative;
+  display: inline-block;
+}
+
+.imgentest img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+.icono-encima {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #007bff;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+.position {
+  font-size: 0.9rem;
+  color: #3574E0;
+  margin-top: 0.2rem;
+}
+
+.slide-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.arrow {
+  color: #fff;
+  background-color: #3574E0;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  margin: 0 0.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.arrow:hover {
+  background-color: #0056b3;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10000;
+  left: 0;
+  top: 0;
   width: 100%;
 
   .experience {

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/movil.css" />
     <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/fancybox.css" />
+    <link rel="stylesheet" href="css/carrousel.css" />
 
     <script
       src="https://kit.fontawesome.com/138f20aa8b.js"
@@ -493,6 +494,72 @@
       >
     </section>
 
+    <section class="contenedor-principal" id="carousel">
+      <h1>EQUIPO CIPENINSULAR</h1>
+      <hr class="underline">
+  
+      <div class="contenedor-secundario" id="slide-container">
+          <!-- Primer artículo del carrusel -->
+          <article class="slide" data-slideIndex="0">
+              <figure class="imgentest">
+                  <img src="resources/team/OIP.jpg" alt="">
+                  <i class="fa-solid fa-quote-left icono-encima"></i>
+              </figure>
+              <h3>John Smith</h3>
+              <p class="position" style="color: #3574E0;">IT Manager</p>
+          </article>
+          
+          <!-- Segundo artículo del carrusel -->
+          <article class="slide" data-slideIndex="1">
+              <figure class="imgentest">
+                  <img src="resources/team/OIP.jpg" alt="">
+                  <i class="fa-solid fa-quote-left icono-encima"></i>
+              </figure>
+              <h3>Bread Mc</h3>
+              <p class="position" style="color: #3574E0;">Founder</p>
+          </article>
+          
+          <!-- Tercer artículo del carrusel -->
+          <article class="slide" data-slideIndex="2">
+              <figure class="imgentest">
+                  <img src="resources/team/OIP.jpg" alt="">
+                  <i class="fa-solid fa-quote-left icono-encima"></i>
+              </figure>
+              <h3>Maria Fread</h3>
+              <p class="position" style="color: #3574E0;">Web Developer</p>
+          </article>
+
+          <article class="slide" data-slideIndex="3">
+            <figure class="imgentest">
+                <img src="resources/team/OIP.jpg" alt="">
+                <i class="fa-solid fa-quote-left icono-encima"></i>
+            </figure>
+            <h3>Bread Mc</h3>
+            <p class="position" style="color: #3574E0;">Founder</p>
+        </article>
+        <article class="slide" data-slideIndex="4">
+          <figure class="imgentest">
+              <img src="resources/team/OIP.jpg" alt="">
+              <i class="fa-solid fa-quote-left icono-encima"></i>
+          </figure>
+          <h3>Bread Mc</h3>
+          <p class="position" style="color: #3574E0;">Founder</p>
+      </article>
+      </div>
+  
+      <!-- Contenedor de botones -->
+      <div class="slide-buttons">
+          <a id="back-button" class="arrow back">
+              <i class="fa-solid fa-chevron-left"></i>
+          </a>
+          <a id="forward-button" class="arrow forward">
+              <i class="fa-solid fa-chevron-right"></i>
+          </a>
+      </div>
+  </section>
+
+    <!-- formulario de contactos -->
+
     <!--colaboradores-->
     <section id="partners">
       <div class="experience">
@@ -645,5 +712,6 @@
         // Your custom options for a specific gallery
       });
     </script>
+    <script src="js/carrousel.js"></script>
   </body>
 </html>
