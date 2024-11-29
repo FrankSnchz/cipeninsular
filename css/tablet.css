@@ -1,30 +1,76 @@
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 768px) {
     .logo-tipografia {
         display: none;
     }
+    
     #header {
-        #ul-menu
-        {
+        padding: 0px 30px;
+
+        .nav-movil {
+            align-items: center;
             display: flex;
-            gap: 5px;
-            .menu-item{
-                a {
-                    font-size: .8rem;
+            width: 100%;
+            justify-content: space-between;
+
+            .cart-menu-movil {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                .cart {
+                    display: flex;
+                }
+                
+                #icon-menu {
+                    display: flex;
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    color: black;
                 }
             }
         }
-    }
+
+        nav {
+            #ul-menu {
+                display: flex;
+                background-color: white;
+                width: 100%;
+                position: absolute;
+                justify-content: space-evenly;
+                top: 100%;
+                left: 0;
+                gap: 10px;
+                height: 0; /* Menú inicialmente con altura 0 */
+                opacity: 0; /* Menú oculto inicialmente */
+                transition: height 0.5s ease, opacity 0.5s ease; /* Transición en altura y opacidad */
+
+                .menu-item{
+                    a {
+                        padding: 5px 0px;
+                        display: block;
+                        font-size: .7rem;
+                    }
+                }
+            }
+
+            #ul-menu.abrir_menu {
+                display: flex; /* Mostramos el menú */
+                height: auto; /* Ajustamos la altura a la de su contenido */
+                opacity: 1; /* Hacemos visible el menú */        
+            }
+        }
+        .cart {
+            display: none;
+        }
+    } 
 
     #parallax {
         .info-parallax {
+            width: 90%;
             left: 50%;
 
-            align-items: center;      
-            gap: 10px;     
+            gap: 15px;     
 
-            h1,p {
-                text-align: center;
-            }
             h1 {
                 font-size: 1.2rem;
             }
@@ -33,7 +79,8 @@
             }
 
             .view-more {
-                padding: 2px 5px;
+                padding: 5px 10px;
+                font-size: 1rem;
             }
         }
     }
@@ -52,41 +99,14 @@
         }
     }
     footer{
-        padding: 10px;
         .main-footer {
-            flex-direction: column-reverse;
+            flex-direction: column;
             gap: 20px;
 
-            .info {
+            .about-info {
                 width: 100%;
-            }
-
-            .social-icons {
-                width: 100%;
-            }
-
-            .info {
-                width: 100%;
-            }
-            .about {
-                width: 100%;
-
-                .logos-footer {
-                    justify-content: center;
-
-                    .logo-solo {
-                        width: 80px;
-                    }
-                }
-
-                .about-us {
-                    align-items: center;
-                    p {
-                        text-align: center;
-                    }
-                }
+                text-align: center;
             }
         }
     }
-    
 }
