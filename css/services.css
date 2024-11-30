@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Titillium Web", sans-serif;
+}
+
+:root {
+    /* COLORES AZULES */
+    --blue-primary: #238EBF;
+    --blue-secondary: #39B3DD;
+    --blue-aditional: #2183A6;
+
+    /* COLORES AMARILLOS */
+    --yellow-primary: #FFD450;
+    --yellow-secondary: #F6C336;
+    --yellow-aditional: rgba(218, 165, 32, 0.9);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+.rslides {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;    
+    padding: 0;
+    margin: auto;
+    height: 650px;
+}
+  
+.rslides li {
+    backface-visibility: hidden;
+    position: absolute;
+    display: none;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.rslides li:first-child {
+    position: relative;
+    display: block;
+    float: left;
+}
+
+.rslides img {
+    display: block;
+    height: 100%;
+    float: left;
+    width: 100%;
+    border: 0;
+    object-fit: cover;
+    position: relative;
+
+}
+
+.slide-fotos{
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+
+.rslides_nav.prev, .rslides_nav.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(100, 100, 100);
+    padding: 10px;
+    font-size: 3rem;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+    text-decoration: none;
+}
+
+.rslides_nav.prev:hover, .rslides_nav.next:hover {
+    font-size: 3.2rem;
+}
+
+.rslides_nav.prev {
+    left: 3%;
+}
+
+.rslides_nav.next {
+    right: 3%;
+}
+
+.header-hero {
+    position: relative;
+    display: flex;
+}
+
+.texture-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../resources/pattern-points.png');
+    background-size: cover;
+    background-position: center;
+    opacity: .04;
+    pointer-events: none;
+    z-index: 2;
+}
+
+/* navbar */
+
+#header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+    transition: background-color 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 20;
+
+    .nav-movil {
+        .logos {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            .logo-solo {
+                width: 50px;
+                height: 50px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .logo-tipografia {
+                width: 150px;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        .cart-menu-movil {
+            display: none;
+        }
+    }
+
+    #ul-menu {
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        list-style: none;
+
+        .menu-item {
+            position: relative;
+            cursor: pointer;
+
+            a {
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 3px;
+                font-size: .8rem;
+                font-weight: 600;
+                color: black;
+
+                .arrow-down {
+                    color: black;
+                    font-size: 10px;
+                }
+            }
+        }
+
+        .submenu {
+            z-index: 50;
+            display: block;
+            opacity: 0;
+            visibility: hidden;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #2f2f2f;
+            list-style: none;
+            transition: opacity .6s ease, visibility 0s 1s;
+            width: 150px;
+        }
+
+        .submenu a {
+            color: whitesmoke;
+            padding: 10px 20px;
+            display: block;
+            text-decoration: none;
+            text-shadow: none;
+            /* Sombra blanca */
+        }
+
+        .submenu a:hover {
+            background-color: var(--blue-primary);
+        }
+
+        /* Mostrar el submenú cuando se clickea el ítem del menú */
+        .menu-item.active .submenu {
+            opacity: 1;
+            /* Lo hace visible */
+            visibility: visible;
+            /* Cambia la visibilidad */
+            transition: opacity .5s ease, visibility 0s;
+            /* Transición suave para la opacidad */
+        }
+
+        .menu-item:hover>a {
+            color: rgb(255, 255, 255);
+        }
+    }
+
+    .cart {
+        color: black;
+        font-size: 1rem;
+        cursor: pointer;
+
+    }
+}
+
+#header.scrolled {
+    background-color: var(--yellow-aditional);
+    color: white;
+    /* Cambia el color del texto si es necesario */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    /* Agrega una sombra */
+    height: 60px;
+}
+
+/*  */
+.container {
+    display: flex;
+    width: 100%;
+}
+
+/* Estilo general de la barra lateral */
+.sidebar {
+    width: 250px;
+    background-color: #000;
+    color: white;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    border-bottom: 1px solid #444;
+    position: relative; /* Necesario para posicionar los submenús */
+}
+
+.sidebar ul li a {
+    display: block;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #b3b3b3;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    background-color: #444;
+    color: #fff;
+}
+
+/* Submenús */
+.sidebar ul .submenu {
+    display: none; /* Ocultos por defecto */
+    position: absolute;
+    left: 100%; /* Alineados a la derecha del padre */
+    top: 0;
+    background-color: #222;
+    border: 1px solid #444;
+    width: 250px;
+    z-index: 1000;
+}
+
+.sidebar ul .submenu li {
+    border-bottom: none; /* Sin bordes en el submenú */
+}
+
+.sidebar ul .submenu li a {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #b3b3b3;
+}
+
+.sidebar ul .submenu li a:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+/* Mostrar submenús al pasar el mouse */
+.sidebar ul li:hover .submenu {
+    display: block;
+}
+
+
+.content {
+    flex-grow: 1;
+    /* El contenido ocupa el espacio restante */
+    padding: 40px;
+    background-color: #fff;
+    /* Fondo blanco para el contenido */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Sombra sutil para el contenido */
+    margin-left: 20px;
+    /* Espacio entre la barra lateral y el contenido */
+    border-radius: 8px;
+    /* Bordes redondeados */
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+    /* Color oscuro para el encabezado */
+}
+
+h3 {
+    font-size: 22px;
+    margin-top: 30px;
+    color: #444;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #666;
+}

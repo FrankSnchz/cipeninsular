@@ -1,712 +1,558 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/tablet.css" />
-    <link rel="stylesheet" href="css/movil.css" />
-    <link rel="stylesheet" href="css/animate.css" />
-    <link rel="stylesheet" href="css/fancybox.css" />
-    <link rel="stylesheet" href="css/carrousel.css" />
 
-    <script
-      src="https://kit.fontawesome.com/138f20aa8b.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="js/responsiveslides.js"></script>
-    <script src="js/fancybox.js"></script>
-    <title>Cipeninsular Design</title>
-  </head>
-  <body>
-    <!-- slide fotos con responsiveslides -->
-    <div class="header-hero slide-fotos">
-      <ul class="rslides">
-        <li><img src="resources/exterior-hero.png" alt="" /></li>
-        <li><img src="resources/casa-hero.png" alt="" /></li>
-        <li><img src="resources/planos-hero.png" alt="" /></li>
-        <li><img src="resources/cuarto-hero.png" alt="" /></li>
-      </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/tablet.css" />
+  <link rel="stylesheet" href="css/movil.css" />
+  <link rel="stylesheet" href="css/animate.css" />
+  <link rel="stylesheet" href="css/fancybox.css" />
+  <link rel="stylesheet" href="css/carrousel.css" />
 
-      <!-- logos navbar -->
-      <div class="texture-overlay"></div>
-      <header id="header">
-        <div class="nav-movil">
-          <div class="logos">
-            <figure class="logo-solo">
-              <img src="resources/logo-og-solo.svg" alt="" />
-            </figure>
-            <figure class="logo-tipografia">
-              <img src="resources/logo-tipografia.png" alt="" />
-            </figure>
-          </div>
+  <script src="https://kit.fontawesome.com/138f20aa8b.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/responsiveslides.js"></script>
+  <script src="js/fancybox.js"></script>
+  <title>Cipeninsular Design</title>
+</head>
 
-          <div class="cart-menu-movil">
-            <i class="cart fa-solid fa-cart-shopping"> </i>
-            <i class="fa-solid fa-bars" id="icon-menu"></i>
-          </div>
-        </div>
+<body>
+  <!-- slide fotos con responsiveslides -->
+  <div class="header-hero slide-fotos">
+    <ul class="rslides">
+      <li><img src="resources/exterior-hero.png" alt="" /></li>
+      <li><img src="resources/casa-hero.png" alt="" /></li>
+      <li><img src="resources/planos-hero.png" alt="" /></li>
+      <li><img src="resources/cuarto-hero.png" alt="" /></li>
+    </ul>
 
-        <nav>
-          <ul id="ul-menu">
-            <li class="menu-item">
-              <a>INICIO <i class="arrow-down fa-solid fa-chevron-down"></i></a>
-              <ul class="submenu">
-                <li>
-                  <a href="#">Submenu 1</a>
-                </li>
-                <li><a href="#">Submenu 2</a></li>
-                <li><a href="#">Submenu 3</a></li>
-              </ul>
-            </li>
-            <li class="menu-item">
-              <a
-                >SERVICIOS <i class="arrow-down fa-solid fa-chevron-down"></i
-              ></a>
-              <ul class="submenu">
-                <li>
-                  <a href="#">Submenu 1</a>
-                </li>
-                <li><a href="#">Submenu 2</a></li>
-                <li><a href="#">Submenu 3</a></li>
-              </ul>
-            </li>
-            <li class="menu-item">
-              <a href="#">MI CHUKUM</a>
-              <ul class="submenu">
-                <li>
-                  <a href="#">Submenu 1</a>
-                </li>
-                <li><a href="#">Submenu 2</a></li>
-                <li><a href="#">Submenu 3</a></li>
-              </ul>
-            </li>
-            <li class="menu-item">
-              <a
-                >NOSOTROS <i class="arrow-down fa-solid fa-chevron-down"></i
-              ></a>
-              <ul class="submenu">
-                <li>
-                  <a href="#">Submenu 1</a>
-                </li>
-                <li><a href="#">Submenu 2</a></li>
-                <li><a href="#">Submenu 3</a></li>
-              </ul>
-            </li>
-            <li class="menu-item">
-              <a
-                >PROYECTOS <i class="arrow-down fa-solid fa-chevron-down"></i
-              ></a>
-              <ul class="submenu">
-                <li>
-                  <a href="#">Submenu 1</a>
-                </li>
-                <li><a href="#">Submenu 2</a></li>
-                <li><a href="#">Submenu 3</a></li>
-              </ul>
-            </li>
-            <li class="menu-item">
-              <a
-                >CONTACTO <i class="arrow-down fa-solid fa-chevron-down"></i
-              ></a>
-              <ul class="submenu">
-                <li>
-                  <a href="#">Submenu 1</a>
-                </li>
-                <li><a href="#">Submenu 2</a></li>
-                <li><a href="#">Submenu 3</a></li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
-
-        <i class="cart fa-solid fa-cart-shopping"> </i>
-      </header>
-
-      <!-- hero -->
-      <section class="hero">
-        <h1></h1>
-      </section>
-    </div>
-
-    <!-- servicios -->
-    <section id="services">
-      <h3>NUESTROS SERVICIOS</h3>
-      <h2>¿Qué podemos ofrecer?</h2>
-      <div class="service-items">
-        <!--Arquitectura en general-->
-        <article class="wow animate__animated animate__fadeInDown service-item">
-          <div class="icon-title">
-            <figure>
-              <img src="resources/icon/construction-icon.png" alt="" />
-            </figure>
-            <h2 class="title-service">Construcción en General</h2>
-          </div>
-
-          <p>
-            Ofrecemos servicios de construcción completos, garantizando calidad
-            y cumplimiento en proyectos residenciales, comerciales e
-            industriales.
-          </p>
-          <a href="" class="view-more"
-            >Ver los proyectos realizados<i
-              class="arrow fa-solid fa-arrow-right"
-            ></i>
-          </a>
-        </article>
-
-        <!-- Topografía -->
-        <article class="wow animate__animated animate__fadeInDown service-item">
-          <div class="icon-title">
-            <figure>
-              <img src="resources/icon/topografia-icon.png" alt="" />
-            </figure>
-
-            <h2 class="title-service">Topografía</h2>
-          </div>
-
-          <p>
-            Brindamos servicios de topografía, incluyendo levantamientos,
-            delimitaciones y estudios técnicos, asegurando precisión y calidad.
-          </p>
-          <a href="" class="view-more"
-            >Ver los proyectos realizados<i
-              class="arrow fa-solid fa-arrow-right"
-            ></i
-          ></a>
-        </article>
-
-        <!--Impacto ambiental-->
-        <article class="wow animate__animated animate__fadeInDown service-item">
-          <div class="icon-title">
-            <figure>
-              <img src="resources/icon/impacto-amb-icon.png" alt="" />
-            </figure>
-
-            <h2 class="title-service">Estudios de Impacto Ambiental</h2>
-          </div>
-
-          <p>
-            Realizamos estudios de impacto ambiental, cumpliendo normativas y
-            promoviendo la sostenibilidad en proyectos residenciales,
-            comerciales e industriales.
-          </p>
-          <a href="" class="view-more"
-            >Ver los proyectos realizados<i
-              class="arrow fa-solid fa-arrow-right"
-            ></i
-          ></a>
-        </article>
-
-        <!--Ingenieria civil-->
-        <article class="wow animate__animated animate__fadeInDown service-item">
-          <div class="icon-title">
-            <figure>
-              <img src="resources/icon/ing-civil-icon.png" alt="" />
-            </figure>
-
-            <h2 class="title-service">Ingenieria Civil</h2>
-          </div>
-
-          <p>
-            Ofrecemos servicios de ingeniería civil, abarcando diseño,
-            planeación y ejecución de proyectos, con soluciones innovadoras y
-            enfoque en calidad y eficiencia.
-          </p>
-          <a href="" class="view-more"
-            >Ver los proyectos realizados<i
-              class="arrow fa-solid fa-arrow-right"
-            ></i
-          ></a>
-        </article>
-      </div>
-      <a
-        href=""
-        class="wow animate__animated animate__fadeIn animate__delay-1s view-all"
-        >Ver todos nuestros servicios</a
-      >
-    </section>
-
-    <!-- parallax -->
-    <section id="parallax">
-      <div class="info-parallax">
-        <h1>Transformamos Espacios, Creamos Futuro</h1>
-        <p>
-          En Cipeninsular, diseñamos tu visión con innovación y sostenibilidad,
-          ofreciendo soluciones arquitectónicas únicas que hacen realidad tus
-          sueños. Contáctanos hoy y construyamos juntos el mañana.
-        </p>
-        <a class="view-more" href="">Haz realidad tu proyecto</a>
-      </div>
-      <div class="transparencia"></div>
-    </section>
-
-    <!--galeria-->
-    <section id="gallery">
-      <div class="title-gallery">
-        <h3>NUESTROS PROYECTOS</h3>
-        <h2>Galería de proyectos</h2>
-      </div>
-
-      <div class="project-gallery">
-        <!---------------INICIO DEL PROYECTO 1----------->
-        <a
-          class="wow animate__animated animate__fadeIn"
-          href="resources/gallery/TrenMayaTramo3/Tramo3_1.png"
-          data-fancybox="project-1"
-          data-caption="Proyecto del Tren Maya Tramo 3 - Foto 1"
-        >
-          <figure>
-            <img
-              src="resources/gallery/TrenMayaTramo3/Tramo3_1.png"
-              alt="Proyecto del Tren Maya Tramo 3 - Foto 1"
-            />
-            <figcaption>Proyecto del Tren Maya Tramo 3</figcaption>
-          </figure>
-        </a>
-        <!--Adicionales-->
-        <a
-          href="resources/gallery/TrenMayaTramo3/Tramo3_2.jpg"
-          data-fancybox="project-1"
-          data-caption="Proyecto del Tren Maya Tramo 3 - Foto 2"
-          style="display: none"
-        >
-          <img
-            src="resources/gallery/TrenMayaTramo3/Tramo3_2.jpg"
-            alt="Proyecto del Tren Maya Tramo 3 - Foto 2"
-          />
-        </a>
-        <a
-          href="resources/gallery/TrenMayaTramo3/Tramo3_3.jpg"
-          data-fancybox="project-1"
-          data-caption="Proyecto del Tren Maya Tramo 3 - Foto 3"
-          style="display: none"
-        >
-          <img
-            src="resources/gallery/TrenMayaTramo3/Tramo3_3.jpg"
-            alt="Proyecto del Tren Maya Tramo 3 - Foto 3"
-          />
-        </a>
-        <a
-          href="resources/gallery/TrenMayaTramo3/Tramo3_4.jpg"
-          data-fancybox="project-1"
-          data-caption="Proyecto del Tren Maya Tramo 3 - Foto 4"
-          style="display: none"
-        >
-          <img
-            src="resources/gallery/TrenMayaTramo3/Tramo3_4.jpg"
-            alt="Proyecto del Tren Maya Tramo 3 - Foto 4"
-          />
-        </a>
-        <!----------------FIN DEL PROYECTO 1----------->
-        <!---------------INICIO DEL PROYECTO 2----------->
-        <a
-          class="wow animate__animated animate__fadeIn"
-          href="resources/gallery/CuartosFrios/CuartosFrios_1.jpg"
-          data-fancybox="project-2"
-          data-caption="Proyecto de cuartos fríos - Foto 1"
-        >
-          <figure>
-            <img
-              src="resources/gallery/CuartosFrios/CuartosFrios_1.jpg"
-              alt="Proyecto de cuartos fríos - Foto 1"
-            />
-            <figcaption>Proyecto de cuartos frios</figcaption>
-          </figure>
-        </a>
-        <!--Adicionales-->
-
-        <a
-          href="resources/gallery/CuartosFrios/CuartosFrios_2.jpg"
-          data-fancybox="project-2"
-          data-caption="Proyecto de cuartos fríos - Foto 2"
-          style="display: none"
-        >
-          <img
-            src="resources/gallery/CuartosFrios/CuartosFrios_2.jpg"
-            alt="Proyecto de cuartos fríos - Foto 2"
-          />
-        </a>
-        <a
-          href="resources/gallery/CuartosFrios/CuartosFrios_3.jpg"
-          data-fancybox="project-2"
-          data-caption="Proyecto de cuartos fríos - Foto 3"
-          style="display: none"
-        >
-          <img
-            src="resources/gallery/CuartosFrios/CuartosFrios_3.jpg"
-            alt="Proyecto de cuartos fríos - Foto 3"
-          />
-        </a>
-        <a
-          href="resources/gallery/CuartosFrios/CuartosFrios_4.jpg"
-          data-fancybox="project-2"
-          data-caption="Proyecto de cuartos fríos - Foto 4"
-          style="display: none"
-        >
-          <img
-            src="resources/gallery/CuartosFrios/CuartosFrios_4.jpg"
-            alt="Proyecto de cuartos fríos - Foto 4"
-          />
-        </a>
-        <a
-          href="resources/gallery/CuartosFrios/CuartosFrios_5.jpg"
-          data-fancybox="project-2"
-          data-caption="Proyecto de cuartos fríos - Foto 5"
-          style="display: none"
-        >
-          <img
-            src="resources/gallery/CuartosFrios/CuartosFrios_5.jpg"
-            alt="Proyecto de cuartos fríos - Foto 5"
-          />
-        </a>
-        <!----------------FIN DEL PROYECTO 2----------->
-        <!---------------INICIO DEL PROYECTO 3----------->
-        <a
-          class="wow animate__animated animate__fadeIn"
-          href="resources/gallery/PlantaProcesamiento/PlantaProcesamiento_1.jpg"
-          data-fancybox="project-3"
-          data-caption="Proyecto de planta de procesamiento - Foto 1"
-        >
-          <figure>
-            <img
-              src="resources/gallery/PlantaProcesamiento/PlantaProcesamiento_1.jpg"
-              alt="Proyecto de planta de procesamiento - Foto 1"
-            />
-            <figcaption>Proyecto de planta de procesamiento</figcaption>
-          </figure>
-        </a>
-        <!--Adicionales-->
-
-        <a
-          href="resources/gallery/PlantaProcesamiento/PlantaProcesamiento_2.jpg"
-          data-fancybox="project-3"
-          data-caption="Proyecto de planta de procesamiento - Foto 2"
-          style="display: none"
-        >
-          <img
-            src="resources/gallery/PlantaProcesamiento/PlantaProcesamiento_2.jpg"
-            alt="Proyecto de planta de procesamiento - Foto 2"
-          />
-        </a>
-        <a
-          href="resources/gallery/PlantaProcesamiento/PlantaProcesamiento_3.jpg"
-          data-fancybox="project-3"
-          data-caption="Proyecto de planta de procesamiento - Foto 3"
-          style="display: none"
-        >
-          <img
-            src="resources/gallery/PlantaProcesamiento/PlantaProcesamiento_3.jpg"
-            alt="Proyecto de planta de procesamiento - Foto 3"
-          />
-        </a>
-        <a
-          href="resources/gallery/PlantaProcesamiento/PlantaProcesamiento_4.jpg"
-          data-fancybox="project-3"
-          data-caption="Proyecto de planta de procesamiento - Foto 4"
-          style="display: none"
-        >
-          <img
-            src="resources/gallery/PlantaProcesamiento/PlantaProcesamiento_4.jpg"
-            alt="Proyecto de planta de procesamiento - Foto 4"
-          />
-        </a>
-        <a
-          href="resources/gallery/PlantaProcesamiento/PlantaProcesamiento_5.jpg"
-          data-fancybox="project-3"
-          data-caption="Proyecto de planta de procesamiento - Foto 5"
-          style="display: none"
-        >
-          <img
-            src="resources/gallery/PlantaProcesamiento/PlantaProcesamiento_5.jpg"
-            alt="Proyecto de planta de procesamiento - Foto 5"
-          />
-        </a>
-        <!----------------FIN DEL PROYECTO 3----------->
-        <!---------------INICIO DEL PROYECTO 4----------->
-        <a
-          class="wow animate__animated animate__fadeIn"
-          href="resources/gallery/VialidadPlanta/VialidadPlanta_1.jpg"
-          data-fancybox="project-4"
-          data-caption="Proyecto de vialidad en planta de energía - Foto 1"
-        >
-          <figure>
-            <img
-              src="resources/gallery/VialidadPlanta/VialidadPlanta_1.jpg"
-              alt="Proyecto de vialidad en planta de energía - Foto 1"
-            />
-            <figcaption>Proyecto de vialidad en planta de energía</figcaption>
-          </figure>
-        </a>
-        <!--Adicionales-->
-
-        <a
-          href="resources/gallery/VialidadPlanta/VialidadPlanta_2.png"
-          data-fancybox="project-4"
-          data-caption="Proyecto de vialidad en planta de energía - Foto 2"
-          style="display: none"
-        >
-          <img
-            src="resources/gallery/VialidadPlanta/VialidadPlanta_2.png"
-            alt="Proyecto de vialidad en planta de energía - Foto 2"
-          />
-        </a>
-        <a
-          href="resources/gallery/VialidadPlanta/VialidadPlanta_3.jpg"
-          data-fancybox="project-4"
-          data-caption="Proyecto de vialidad en planta de energía - Foto 3"
-          style="display: none"
-        >
-          <img
-            src="resources/gallery/VialidadPlanta/VialidadPlanta_3.jpg"
-            alt="Proyecto de vialidad en planta de energía - Foto 3"
-          />
-        </a>
-        <a
-          href="resources/gallery/VialidadPlanta/VialidadPlanta_4.png"
-          data-fancybox="project-4"
-          data-caption="Proyecto de vialidad en planta de energía - Foto 4"
-          style="display: none"
-        >
-          <img
-            src="resources/gallery/VialidadPlanta/VialidadPlanta_4.png"
-            alt="Proyecto de vialidad en planta de energía - Foto 4"
-          />
-        </a>
-        <a
-          href="resources/gallery/VialidadPlanta/VialidadPlanta_5.jpg"
-          data-fancybox="project-4"
-          data-caption="Proyecto de vialidad en planta de energía - Foto 5"
-          style="display: none"
-        >
-          <img
-            src="resources/gallery/VialidadPlanta/VialidadPlanta_5.jpg"
-            alt="Proyecto de vialidad en planta de energía - Foto 5"
-          />
-        </a>
-        <!----------------FIN DEL PROYECTO 4----------->
-      </div>
-      <a
-        href=""
-        class="wow animate__animated animate__fadeIn animate__delay-1s view-all"
-        >Ver todos nuestros proyectos</a
-      >
-    </section>
-
-    <section class="contenedor-principal" id="carousel">
-      <h1>EQUIPO CIPENINSULAR</h1>
-      <hr class="underline">
-  
-      <div class="contenedor-secundario" id="slide-container">
-          <!-- Primer artículo del carrusel -->
-          <article class="slide" data-slideIndex="0">
-              <figure class="imgentest">
-                  <img src="resources/team/OIP.jpg" alt="">
-                  <i class="fa-solid fa-quote-left icono-encima"></i>
-              </figure>
-              <h3>John Smith</h3>
-              <p class="position" style="color: #3574E0;">IT Manager</p>
-          </article>
-          
-          <!-- Segundo artículo del carrusel -->
-          <article class="slide" data-slideIndex="1">
-              <figure class="imgentest">
-                  <img src="resources/team/OIP.jpg" alt="">
-                  <i class="fa-solid fa-quote-left icono-encima"></i>
-              </figure>
-              <h3>Bread Mc</h3>
-              <p class="position" style="color: #3574E0;">Founder</p>
-          </article>
-          
-          <!-- Tercer artículo del carrusel -->
-          <article class="slide" data-slideIndex="2">
-              <figure class="imgentest">
-                  <img src="resources/team/OIP.jpg" alt="">
-                  <i class="fa-solid fa-quote-left icono-encima"></i>
-              </figure>
-              <h3>Maria Fread</h3>
-              <p class="position" style="color: #3574E0;">Web Developer</p>
-          </article>
-
-          <article class="slide" data-slideIndex="3">
-            <figure class="imgentest">
-                <img src="resources/team/OIP.jpg" alt="">
-                <i class="fa-solid fa-quote-left icono-encima"></i>
-            </figure>
-            <h3>Bread Mc</h3>
-            <p class="position" style="color: #3574E0;">Founder</p>
-        </article>
-        <article class="slide" data-slideIndex="4">
-          <figure class="imgentest">
-              <img src="resources/team/OIP.jpg" alt="">
-              <i class="fa-solid fa-quote-left icono-encima"></i>
-          </figure>
-          <h3>Bread Mc</h3>
-          <p class="position" style="color: #3574E0;">Founder</p>
-      </article>
-      </div>
-  
-      <!-- Contenedor de botones -->
-      <div class="slide-buttons">
-          <a id="back-button" class="arrow back">
-              <i class="fa-solid fa-chevron-left"></i>
-          </a>
-          <a id="forward-button" class="arrow forward">
-              <i class="fa-solid fa-chevron-right"></i>
-          </a>
-      </div>
-  </section>
-
-    <!-- formulario de contactos -->
-
-    <!--colaboradores-->
-    <section id="partners">
-      <div class="experience">
-        <!--Clientes-->
-        <article>
-          <div class="numbers">
-            <h3 class="counter" data-target="180">[ 0 ]</h3>
-            <h3>+</h3>
-          </div>
-          <p>CLIENTES ACTUALES</p>
-        </article>
-
-        <!--Años-->
-        <article>
-          <div class="numbers">
-            <h3 class="counter" data-target="10">[ 0 ]</h3>
-            <h3>+</h3>
-          </div>
-
-          <p>AÑOS DE EXPERIENCIA</p>
-        </article>
-
-        <!--Empleos-->
-        <article>
-          <div class="numbers">
-            <h3 class="counter" data-target="530">[ 0]</h3>
-            <h3>+</h3>
-          </div>
-          <p>EMPLEOS GENERADOS</p>
-        </article>
-
-        <!--Oficinas-->
-        <article>
-          <div class="numbers">
-            <h3 class="counter" data-target="5">[ 0 ]</h3>
-            <h3>+</h3>
-          </div>
-          <p>OFICINAS</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- formulario de contactos -->
-    <button class="contact">
-      <i class="fa-solid fa-envelope"></i>
-      <span class="contact-text">Contáctanos</span>
-    </button>
-
-    <!-- Modal -->
-    <div id="modal" class="overlay">
-      <div class="dialog">
-        <span class="close"><i class="fa-solid fa-xmark"></i></span>
-        <h2>Contáctanos</h2>
-        <p>
-          Si tiene alguna pregunta sobre nuestros servicios, rellene el
-          siguiente formulario de contacto.
-        </p>
-        <form class="contact-form">
-          <input type="text" name="name" placeholder="Nombre *" required />
-          <input type="email" name="email" placeholder="E-mail *" required />
-          <textarea name="message" placeholder="Mensaje *" required></textarea>
-          <button type="submit" class="submit-btn">ENVIAR</button>
-        </form>
-      </div>
-    </div>
-
-    <!-- footer -->
-    <footer>
-      <div class="main-footer">
-        <div class="about-info">
+    <!-- logos navbar -->
+    <div class="texture-overlay"></div>
+    <header id="header">
+      <div class="nav-movil">
+        <div class="logos">
           <figure class="logo-solo">
             <img src="resources/logo-og-solo.svg" alt="" />
           </figure>
-
-          <p>
-            Somos una empresa 100% Yucateca, fundada en el año 2015 en la ciudad
-            de Mérida, Yucatán, México.
-          </p>
+          <figure class="logo-tipografia">
+            <img src="resources/logo-tipografia.png" alt="" />
+          </figure>
         </div>
 
-        <div class="contact-info">
-          <h3>Contáctanos</h3>
-          <div class="contact-item">
-            <i class="icon fa-solid fa-phone-volume"></i>
-            <a href="tel:+52 9992 492402">+52 9992 492402</a>
-          </div>
-
-          <div class="contact-item">
-            <i class="icon fa-solid fa-envelope"></i>
-            <a href="mailto:support@company.com">contacto@cipeninsular.com</a>
-          </div>
-
-          <div class="logos-contact">
-            <a
-              href="https://www.facebook.com/profile.php?id=61568988712824"
-              target="_blank"
-              ><i class="logo fa-brands fa-facebook"></i
-            ></a>
-            <a href="https://www.instagram.com/cipeninsular_mx/" target="_blank"
-              ><i class="logo fa-brands fa-instagram"></i
-            ></a>
-            <a href="https://www.youtube.com/@CIPENINSULAR_MX" target="_blank"
-              ><i class="logo fa-brands fa-youtube"></i
-            ></a>
-          </div>
-        </div>
-
-        <div class="ubication-info">
-          <h3>Dónde nos ubicamos</h3>
-          <div class="contact-item">
-            <i class="icon fa-solid fa-location-dot"></i>
-            <a href="https://maps.app.goo.gl/KhEHUkwVatAvD7oR9" target="_blank">
-              55 S/N entre 54 y 60 Hacienda Teya<br />Kanasin, CP. 97370, Mérida
-              Yucatán.
-            </a>
-          </div>
-        </div>
-
-        <div class="help-info">
-          <h3>Información legal</h3>
-          <a href="">Aviso de privacidad</a>
-          <a href="">Política de cookies</a>
-          <a href="">Responsabilidad con el Medio Ambiente</a>
+        <div class="cart-menu-movil">
+          <i class="cart fa-solid fa-cart-shopping"> </i>
+          <i class="fa-solid fa-bars" id="icon-menu"></i>
         </div>
       </div>
 
-      <div class="line"></div>
-      <div class="copy">
+      <nav>
+        <ul id="ul-menu">
+          <li class="menu-item">
+            <a>INICIO <i class="arrow-down fa-solid fa-chevron-down"></i></a>
+            <ul class="submenu">
+              <li>
+                <a href="#">Submenu 1</a>
+              </li>
+              <li><a href="#">Submenu 2</a></li>
+              <li><a href="#">Submenu 3</a></li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a>SERVICIOS <i class="arrow-down fa-solid fa-chevron-down"></i></a>
+            <ul class="submenu">
+              <li>
+                <a href="#">Submenu 1</a>
+              </li>
+              <li><a href="#">Submenu 2</a></li>
+              <li><a href="#">Submenu 3</a></li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a href="#">MI CHUKUM</a>
+            <ul class="submenu">
+              <li>
+                <a href="#">Submenu 1</a>
+              </li>
+              <li><a href="#">Submenu 2</a></li>
+              <li><a href="#">Submenu 3</a></li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a>NOSOTROS <i class="arrow-down fa-solid fa-chevron-down"></i></a>
+            <ul class="submenu">
+              <li>
+                <a href="#">Submenu 1</a>
+              </li>
+              <li><a href="#">Submenu 2</a></li>
+              <li><a href="#">Submenu 3</a></li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a>PROYECTOS <i class="arrow-down fa-solid fa-chevron-down"></i></a>
+            <ul class="submenu">
+              <li>
+                <a href="#">Submenu 1</a>
+              </li>
+              <li><a href="#">Submenu 2</a></li>
+              <li><a href="#">Submenu 3</a></li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a>CONTACTO <i class="arrow-down fa-solid fa-chevron-down"></i></a>
+            <ul class="submenu">
+              <li>
+                <a href="#">Submenu 1</a>
+              </li>
+              <li><a href="#">Submenu 2</a></li>
+              <li><a href="#">Submenu 3</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <i class="cart fa-solid fa-cart-shopping"> </i>
+    </header>
+
+    <!-- hero -->
+    <section class="hero">
+      <h1></h1>
+    </section>
+  </div>
+
+  <!-- servicios -->
+  <section id="services">
+    <h3>NUESTROS SERVICIOS</h3>
+    <h2>¿Qué podemos ofrecer?</h2>
+    <div class="service-items">
+      <!--Arquitectura en general-->
+      <article class="wow animate__animated animate__fadeInDown service-item">
+        <div class="icon-title">
+          <figure>
+            <img src="resources/icon/construction-icon.png" alt="" />
+          </figure>
+          <h2 class="title-service">Construcción en General</h2>
+        </div>
+
         <p>
-          <span>Cipeninsular</span> &copy; 2024 . Todos los derechos reservados.
-          Diseñado y desarrollado por <span>CIP</span>.
+          Ofrecemos servicios de construcción completos, garantizando calidad
+          y cumplimiento en proyectos residenciales, comerciales e
+          industriales.
+        </p>
+        <a href="" class="view-more">Ver los proyectos realizados<i class="arrow-service fa-solid fa-arrow-right"></i>
+        </a>
+      </article>
+
+      <!-- Topografía -->
+      <article class="wow animate__animated animate__fadeInDown service-item">
+        <div class="icon-title">
+          <figure>
+            <img src="resources/icon/topografia-icon.png" alt="" />
+          </figure>
+
+          <h2 class="title-service">Topografía</h2>
+        </div>
+
+        <p>
+          Brindamos servicios de topografía, incluyendo levantamientos,
+          delimitaciones y estudios técnicos, asegurando precisión y calidad.
+        </p>
+        <a href="" class="view-more">Ver los proyectos realizados<i
+            class="arrow-service fa-solid fa-arrow-right"></i></a>
+      </article>
+
+      <!--Impacto ambiental-->
+      <article class="wow animate__animated animate__fadeInDown service-item">
+        <div class="icon-title">
+          <figure>
+            <img src="resources/icon/impacto-amb-icon.png" alt="" />
+          </figure>
+
+          <h2 class="title-service">Estudios de Impacto Ambiental</h2>
+        </div>
+
+        <p>
+          Realizamos estudios de impacto ambiental, cumpliendo normativas y
+          promoviendo la sostenibilidad en proyectos residenciales,
+          comerciales e industriales.
+        </p>
+        <a href="" class="view-more">Ver los proyectos realizados<i
+            class="arrow-service fa-solid fa-arrow-right"></i></a>
+      </article>
+
+      <!--Ingenieria civil-->
+      <article class="wow animate__animated animate__fadeInDown service-item">
+        <div class="icon-title">
+          <figure>
+            <img src="resources/icon/ing-civil-icon.png" alt="" />
+          </figure>
+
+          <h2 class="title-service">Ingenieria Civil</h2>
+        </div>
+
+        <p>
+          Ofrecemos servicios de ingeniería civil, abarcando diseño,
+          planeación y ejecución de proyectos, con soluciones innovadoras y
+          enfoque en calidad y eficiencia.
+        </p>
+        <a href="" class="view-more">Ver los proyectos realizados<i
+            class="arrow-service fa-solid fa-arrow-right"></i></a>
+      </article>
+    </div>
+    <a href="services.html" class="wow animate__animated animate__fadeIn animate__delay-1s view-all">Ver todos nuestros
+      servicios</a>
+  </section>
+
+  <!-- parallax -->
+  <section id="parallax">
+    <div class="info-parallax">
+      <h1>Transformamos Espacios, Creamos Futuro</h1>
+      <p>
+        En Cipeninsular, diseñamos tu visión con innovación y sostenibilidad,
+        ofreciendo soluciones arquitectónicas únicas que hacen realidad tus
+        sueños. Contáctanos hoy y construyamos juntos el mañana.
+      </p>
+      <a class="view-more" href="">Haz realidad tu proyecto</a>
+    </div>
+    <div class="transparencia"></div>
+  </section>
+
+  <!--galeria-->
+  <section id="gallery">
+    <div class="title-gallery">
+      <h3>NUESTROS PROYECTOS</h3>
+      <h2>Galería de proyectos</h2>
+    </div>
+
+    <div class="project-gallery">
+      <!---------------INICIO DEL PROYECTO 1----------->
+      <a class="wow animate__animated animate__fadeIn" href="resources/gallery/TrenMayaTramo3/Tramo3_1.png"
+        data-fancybox="project-1" data-caption="Proyecto del Tren Maya Tramo 3 - Foto 1">
+        <figure>
+          <img src="resources/gallery/TrenMayaTramo3/Tramo3_1.png" alt="Proyecto del Tren Maya Tramo 3 - Foto 1" />
+          <figcaption>Proyecto del Tren Maya Tramo 3</figcaption>
+        </figure>
+      </a>
+      <!--Adicionales-->
+      <a href="resources/gallery/TrenMayaTramo3/Tramo3_2.jpg" data-fancybox="project-1"
+        data-caption="Proyecto del Tren Maya Tramo 3 - Foto 2" style="display: none">
+        <img src="resources/gallery/TrenMayaTramo3/Tramo3_2.jpg" alt="Proyecto del Tren Maya Tramo 3 - Foto 2" />
+      </a>
+      <a href="resources/gallery/TrenMayaTramo3/Tramo3_3.jpg" data-fancybox="project-1"
+        data-caption="Proyecto del Tren Maya Tramo 3 - Foto 3" style="display: none">
+        <img src="resources/gallery/TrenMayaTramo3/Tramo3_3.jpg" alt="Proyecto del Tren Maya Tramo 3 - Foto 3" />
+      </a>
+      <a href="resources/gallery/TrenMayaTramo3/Tramo3_4.jpg" data-fancybox="project-1"
+        data-caption="Proyecto del Tren Maya Tramo 3 - Foto 4" style="display: none">
+        <img src="resources/gallery/TrenMayaTramo3/Tramo3_4.jpg" alt="Proyecto del Tren Maya Tramo 3 - Foto 4" />
+      </a>
+      <!----------------FIN DEL PROYECTO 1----------->
+      <!---------------INICIO DEL PROYECTO 2----------->
+      <a class="wow animate__animated animate__fadeIn" href="resources/gallery/CuartosFrios/CuartosFrios_1.jpg"
+        data-fancybox="project-2" data-caption="Proyecto de cuartos fríos - Foto 1">
+        <figure>
+          <img src="resources/gallery/CuartosFrios/CuartosFrios_1.jpg" alt="Proyecto de cuartos fríos - Foto 1" />
+          <figcaption>Proyecto de cuartos frios</figcaption>
+        </figure>
+      </a>
+      <!--Adicionales-->
+
+      <a href="resources/gallery/CuartosFrios/CuartosFrios_2.jpg" data-fancybox="project-2"
+        data-caption="Proyecto de cuartos fríos - Foto 2" style="display: none">
+        <img src="resources/gallery/CuartosFrios/CuartosFrios_2.jpg" alt="Proyecto de cuartos fríos - Foto 2" />
+      </a>
+      <a href="resources/gallery/CuartosFrios/CuartosFrios_3.jpg" data-fancybox="project-2"
+        data-caption="Proyecto de cuartos fríos - Foto 3" style="display: none">
+        <img src="resources/gallery/CuartosFrios/CuartosFrios_3.jpg" alt="Proyecto de cuartos fríos - Foto 3" />
+      </a>
+      <a href="resources/gallery/CuartosFrios/CuartosFrios_4.jpg" data-fancybox="project-2"
+        data-caption="Proyecto de cuartos fríos - Foto 4" style="display: none">
+        <img src="resources/gallery/CuartosFrios/CuartosFrios_4.jpg" alt="Proyecto de cuartos fríos - Foto 4" />
+      </a>
+      <a href="resources/gallery/CuartosFrios/CuartosFrios_5.jpg" data-fancybox="project-2"
+        data-caption="Proyecto de cuartos fríos - Foto 5" style="display: none">
+        <img src="resources/gallery/CuartosFrios/CuartosFrios_5.jpg" alt="Proyecto de cuartos fríos - Foto 5" />
+      </a>
+      <!----------------FIN DEL PROYECTO 2----------->
+      <!---------------INICIO DEL PROYECTO 3----------->
+      <a class="wow animate__animated animate__fadeIn"
+        href="resources/gallery/PlantaProcesamiento/PlantaProcesamiento_1.jpg" data-fancybox="project-3"
+        data-caption="Proyecto de planta de procesamiento - Foto 1">
+        <figure>
+          <img src="resources/gallery/PlantaProcesamiento/PlantaProcesamiento_1.jpg"
+            alt="Proyecto de planta de procesamiento - Foto 1" />
+          <figcaption>Proyecto de planta de procesamiento</figcaption>
+        </figure>
+      </a>
+      <!--Adicionales-->
+
+      <a href="resources/gallery/PlantaProcesamiento/PlantaProcesamiento_2.jpg" data-fancybox="project-3"
+        data-caption="Proyecto de planta de procesamiento - Foto 2" style="display: none">
+        <img src="resources/gallery/PlantaProcesamiento/PlantaProcesamiento_2.jpg"
+          alt="Proyecto de planta de procesamiento - Foto 2" />
+      </a>
+      <a href="resources/gallery/PlantaProcesamiento/PlantaProcesamiento_3.jpg" data-fancybox="project-3"
+        data-caption="Proyecto de planta de procesamiento - Foto 3" style="display: none">
+        <img src="resources/gallery/PlantaProcesamiento/PlantaProcesamiento_3.jpg"
+          alt="Proyecto de planta de procesamiento - Foto 3" />
+      </a>
+      <a href="resources/gallery/PlantaProcesamiento/PlantaProcesamiento_4.jpg" data-fancybox="project-3"
+        data-caption="Proyecto de planta de procesamiento - Foto 4" style="display: none">
+        <img src="resources/gallery/PlantaProcesamiento/PlantaProcesamiento_4.jpg"
+          alt="Proyecto de planta de procesamiento - Foto 4" />
+      </a>
+      <a href="resources/gallery/PlantaProcesamiento/PlantaProcesamiento_5.jpg" data-fancybox="project-3"
+        data-caption="Proyecto de planta de procesamiento - Foto 5" style="display: none">
+        <img src="resources/gallery/PlantaProcesamiento/PlantaProcesamiento_5.jpg"
+          alt="Proyecto de planta de procesamiento - Foto 5" />
+      </a>
+      <!----------------FIN DEL PROYECTO 3----------->
+      <!---------------INICIO DEL PROYECTO 4----------->
+      <a class="wow animate__animated animate__fadeIn" href="resources/gallery/VialidadPlanta/VialidadPlanta_1.jpg"
+        data-fancybox="project-4" data-caption="Proyecto de vialidad en planta de energía - Foto 1">
+        <figure>
+          <img src="resources/gallery/VialidadPlanta/VialidadPlanta_1.jpg"
+            alt="Proyecto de vialidad en planta de energía - Foto 1" />
+          <figcaption>Proyecto de vialidad en planta de energía</figcaption>
+        </figure>
+      </a>
+      <!--Adicionales-->
+
+      <a href="resources/gallery/VialidadPlanta/VialidadPlanta_2.png" data-fancybox="project-4"
+        data-caption="Proyecto de vialidad en planta de energía - Foto 2" style="display: none">
+        <img src="resources/gallery/VialidadPlanta/VialidadPlanta_2.png"
+          alt="Proyecto de vialidad en planta de energía - Foto 2" />
+      </a>
+      <a href="resources/gallery/VialidadPlanta/VialidadPlanta_3.jpg" data-fancybox="project-4"
+        data-caption="Proyecto de vialidad en planta de energía - Foto 3" style="display: none">
+        <img src="resources/gallery/VialidadPlanta/VialidadPlanta_3.jpg"
+          alt="Proyecto de vialidad en planta de energía - Foto 3" />
+      </a>
+      <a href="resources/gallery/VialidadPlanta/VialidadPlanta_4.png" data-fancybox="project-4"
+        data-caption="Proyecto de vialidad en planta de energía - Foto 4" style="display: none">
+        <img src="resources/gallery/VialidadPlanta/VialidadPlanta_4.png"
+          alt="Proyecto de vialidad en planta de energía - Foto 4" />
+      </a>
+      <a href="resources/gallery/VialidadPlanta/VialidadPlanta_5.jpg" data-fancybox="project-4"
+        data-caption="Proyecto de vialidad en planta de energía - Foto 5" style="display: none">
+        <img src="resources/gallery/VialidadPlanta/VialidadPlanta_5.jpg"
+          alt="Proyecto de vialidad en planta de energía - Foto 5" />
+      </a>
+      <!----------------FIN DEL PROYECTO 4----------->
+    </div>
+    <a href="" class="wow animate__animated animate__fadeIn animate__delay-1s view-all">Ver todos nuestros proyectos</a>
+  </section>
+
+  <section class="contenedor-principal" id="carousel">
+    <div class="title-team">
+      <h3>NUESTRO EQUIPO</h3>
+      <h2>Miembros de CIPENINSULAR</h2>
+    </div>
+
+    <div class="contenedor-secundario" id="slide-container">
+      <!-- Primer artículo del carrusel -->
+      <article class="slide" data-slideIndex="0">
+        <figure class="imgentest">
+          <img src="resources/team/OIP.jpg" alt="">
+          <i class="fa-solid fa-quote-left icono-encima"></i>
+        </figure>
+        <h3>John Smith</h3>
+        <p class="position" style="color: #3574E0;">IT Manager</p>
+      </article>
+
+      <!-- Segundo artículo del carrusel -->
+      <article class="slide" data-slideIndex="1">
+        <figure class="imgentest">
+          <img src="resources/team/OIP.jpg" alt="">
+          <i class="fa-solid fa-quote-left icono-encima"></i>
+        </figure>
+        <h3>Bread Mc</h3>
+        <p class="position" style="color: #3574E0;">Founder</p>
+      </article>
+
+      <!-- Tercer artículo del carrusel -->
+      <article class="slide" data-slideIndex="2">
+        <figure class="imgentest">
+          <img src="resources/team/OIP.jpg" alt="">
+          <i class="fa-solid fa-quote-left icono-encima"></i>
+        </figure>
+        <h3>Maria Fread</h3>
+        <p class="position" style="color: #3574E0;">Web Developer</p>
+      </article>
+
+      <article class="slide" data-slideIndex="3">
+        <figure class="imgentest">
+          <img src="resources/team/OIP.jpg" alt="">
+          <i class="fa-solid fa-quote-left icono-encima"></i>
+        </figure>
+        <h3>Bread Mc</h3>
+        <p class="position" style="color: #3574E0;">Founder</p>
+      </article>
+      <article class="slide" data-slideIndex="4">
+        <figure class="imgentest">
+          <img src="resources/team/OIP.jpg" alt="">
+          <i class="fa-solid fa-quote-left icono-encima"></i>
+        </figure>
+        <h3>Bread Mc</h3>
+        <p class="position" style="color: #3574E0;">Founder</p>
+      </article>
+    </div>
+
+    <!-- Contenedor de botones -->
+    <div class="slide-buttons">
+      <a id="back-button" class="arrow back">
+        <i class="fa-solid fa-chevron-left"></i>
+      </a>
+      <a id="forward-button" class="arrow forward">
+        <i class="fa-solid fa-chevron-right"></i>
+      </a>
+    </div>
+  </section>
+
+  <!--colaboradores-->
+  <section id="partners">
+    <div class="section-title">
+      <h2>Nuestra Experiencia</h2>
+      <p>Conoce algunos de nuestros logros y cifras que respaldan nuestra trayectoria</p>
+    </div>
+    <!--Clientes-->
+    <article>
+      <div class="numbers">
+        <h3 class="counter" data-target="180">[ 0 ]</h3>
+        <span>+</span>
+      </div>
+      <p>CLIENTES ACTUALES</p>
+    </article>
+
+    <!--Años-->
+    <article>
+      <div class="numbers">
+        <h3 class="counter" data-target="10">[ 0 ]</h3>
+        <span>+</span>
+      </div>
+      <p>AÑOS DE EXPERIENCIA</p>
+    </article>
+
+    <!--Empleos-->
+    <article>
+      <div class="numbers">
+        <h3 class="counter" data-target="530">[ 0 ]</h3>
+        <span>+</span>
+      </div>
+      <p>EMPLEOS GENERADOS</p>
+    </article>
+    <!--Oficinas-->
+    <article>
+      <div class="numbers">
+        <h3 class="counter" data-target="5">[ 0 ]</h3>
+        <h3>+</h3>
+      </div>
+      <p>OFICINAS</p>
+    </article>
+  </section>
+
+  <!-- formulario de contactos -->
+  <button class="contact">
+    <i class="fa-solid fa-envelope"></i>
+    <span class="contact-text">Contáctanos</span>
+  </button>
+
+  <!-- Modal -->
+  <div id="modal" class="overlay">
+    <div class="dialog">
+      <span class="close"><i class="fa-solid fa-xmark"></i></span>
+      <h2>Contáctanos</h2>
+      <p>
+        Si tiene alguna pregunta sobre nuestros servicios, rellene el
+        siguiente formulario de contacto.
+      </p>
+      <form class="contact-form">
+        <input type="text" name="name" placeholder="Nombre *" required />
+        <input type="email" name="email" placeholder="E-mail *" required />
+        <textarea name="message" placeholder="Mensaje *" required></textarea>
+        <button type="submit" class="submit-btn">ENVIAR</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer>
+    <div class="main-footer">
+      <div class="about-info">
+        <figure class="logo-solo">
+          <img src="resources/logo-og-solo.svg" alt="" />
+        </figure>
+
+        <p>
+          Somos una empresa 100% Yucateca, fundada en el año 2015 en la ciudad
+          de Mérida, Yucatán, México.
         </p>
       </div>
-    </footer>
 
-    <script src="js/scripts.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script>
-      new WOW().init();
-    </script>
+      <div class="contact-info">
+        <h3>Contáctanos</h3>
+        <div class="contact-item">
+          <i class="icon fa-solid fa-phone-volume"></i>
+          <a href="tel:+52 9992 492402">+52 9992 492402</a>
+        </div>
 
-    <!--GALLERY-->
-    <script>
-      Fancybox.bind("[data-fancybox]", {
-        // Your custom options for a specific gallery
-      });
-    </script>
-    <script src="js/carrousel.js"></script>
-  </body>
+        <div class="contact-item">
+          <i class="icon fa-solid fa-envelope"></i>
+          <a href="mailto:support@company.com">contacto@cipeninsular.com</a>
+        </div>
+
+        <div class="logos-contact">
+          <a href="https://www.facebook.com/profile.php?id=61568988712824" target="_blank"><i
+              class="logo fa-brands fa-facebook"></i></a>
+          <a href="https://www.instagram.com/cipeninsular_mx/" target="_blank"><i
+              class="logo fa-brands fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@CIPENINSULAR_MX" target="_blank"><i
+              class="logo fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="ubication-info">
+        <h3>Dónde nos ubicamos</h3>
+        <div class="contact-item">
+          <i class="icon fa-solid fa-location-dot"></i>
+          <a href="https://maps.app.goo.gl/KhEHUkwVatAvD7oR9" target="_blank">
+            55 S/N entre 54 y 60 Hacienda Teya<br />Kanasin, CP. 97370, Mérida
+            Yucatán.
+          </a>
+        </div>
+      </div>
+
+      <div class="help-info">
+        <h3>Información legal</h3>
+        <a href="">Aviso de privacidad</a>
+        <a href="">Política de cookies</a>
+        <a href="">Responsabilidad con el Medio Ambiente</a>
+      </div>
+    </div>
+
+    <div class="line"></div>
+    <div class="copy">
+      <p>
+        <span>Cipeninsular</span> &copy; 2024 . Todos los derechos reservados.
+        Diseñado y desarrollado por <span>CIP</span>.
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/scripts.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+
+  <!--GALLERY-->
+  <script>
+    Fancybox.bind("[data-fancybox]", {
+      // Your custom options for a specific gallery
+    });
+  </script>
+  <script src="js/carrousel.js"></script>
+</body>
+
 </html>
