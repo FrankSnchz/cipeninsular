@@ -256,7 +256,6 @@ html
 /* services */
 #services {
   background-color: rgba(0, 0, 0, 0.1); /* Color negro con opacidad */
-
   padding: 3rem 0;
   display: flex;
   flex-direction: column;
@@ -333,16 +332,12 @@ html
 
       .arrow-service {
         display: none;
-      width: 30px;
-      height: 30px;
-      border-radius: 50%;
-      background-color: #0056b3;
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1rem;
-      transition: transform 0.2s ease-in-out, background-color 0.3s ease;
+        color: rgb(0, 0, 0);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1rem;
+        transition: transform 0.2s ease-in-out, background-color 0.3s ease;
       }
     }
   }
@@ -627,35 +622,6 @@ h3 {
   left: 0;
   top: 0;
   width: 100%;
-
-  .experience {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px;
-
-    article {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-
-      .numbers {
-        display: flex;
-        gap: 2px;
-
-        h3 {
-          font-size: 1.5rem;
-          font-weight: 400;
-          color: gray;
-        }
-      }
-
-      p{
-        font-weight: 600;
-      }
-    }
-  }
 }
 
 /* Estilos para el botón fijo de contacto */
@@ -770,79 +736,74 @@ h3 {
   display: block;
 }
 
-/* partners */
-
-#partners {
-  width: 100%;
-  padding: 50px 20px;
-  background-color: #f9f9f9;
-  font-family: 'Arial', sans-serif;
-  text-align: center;
-}
-
-.section-title h2 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #333;
-  margin-bottom: 10px;
-}
-
-.section-title p {
-  font-size: 1.2rem;
-  font-weight: 400;
-  color: #666;
-  margin-bottom: 30px;
-}
-
-/* Estilización de los artículos directamente */
+/* Colaboradores */
 #partners {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-article {
-  background-color: white;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  transition: transform 0.3s ease;
-  min-width: 200px;
-  flex: 1;
-  max-width: 250px;
-}
-
-article:hover {
-  transform: translateY(-10px);
-}
-
-.numbers {
-  display: flex;
-  align-items: baseline;
   justify-content: center;
-  gap: 5px;
-}
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.1);
 
-.numbers h3 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #333;
-  margin: 0;
-}
+  .section-title {
 
-.numbers span {
-  font-size: 1.5rem;
-  color: #ff6600;
-}
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #333;
+    }
 
-p {
-  margin-top: 10px;
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #555;
+    p {
+      font-size: 1rem;
+      font-weight: 400;
+      color: #666;
+    }
+  }
+
+  .articles {
+    display: flex;
+    gap: 10px;
+
+    article {
+      background-color: white;
+      border-radius: 10px;
+      padding: 5px 10px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s ease;
+  
+      .numbers {
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        gap: 5px;
+  
+        h3 {
+          font-size: .9rem;
+          font-weight: 700;
+          color: #333;
+          margin: 0;
+        }
+  
+        span {
+          font-size: .9rem;
+          color: #ff6600;
+        }
+      }
+      
+      p {
+        font-size: .7rem;
+        font-weight: 600;
+        color: #555;
+      }
+    }
+  
+    article:hover {
+      transform: translateY(-10px);
+    }
+  }
+ 
+
 }
 
 /* Adaptación a pantallas pequeñas */

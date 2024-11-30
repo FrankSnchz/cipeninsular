@@ -119,6 +119,25 @@
         }
     }
     
+    #partners {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 5px;
+
+        .articles {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+
+        }
+        .section-title {
+            p {
+                display: none;
+            }
+        }
+    }
     .contact-text {
         display: none; /* Oculta el texto */
       }
